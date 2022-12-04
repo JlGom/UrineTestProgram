@@ -6,17 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:layout_width="450dp"
+        android:layout_height="760dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:src="@drawable/urine"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-20dp"
+        tools:layout_editor_absoluteY="-15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="집에서 빠르게 가능한"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="77dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="urine test"
+        android:textColor="#eee8aa"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="104dp"
+        tools:ignore="MissingConstraints" />
+
     <EditText
         android:id="@+id/ConstraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="424dp"
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="아이디"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -36,21 +71,23 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
         android:text="로그인"
         app:layout_constraintEnd_toEndOf="@+id/et_pass"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/et_pass"
         app:layout_constraintTop_toBottomOf="@+id/et_pass" />
 
     <Button
         android:id="@+id/btn_register"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
         android:layout_marginTop="24dp"
         android:text="회원가입"
-        app:layout_constraintEnd_toEndOf="@+id/btn_login"
-        app:layout_constraintStart_toStartOf="@+id/btn_login"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+        app:layout_constraintEnd_toEndOf="@+id/et_pass"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_pass"
+        app:layout_constraintTop_toBottomOf="@+id/et_pass" />
 </androidx.constraintlayout.widget.ConstraintLayout>
